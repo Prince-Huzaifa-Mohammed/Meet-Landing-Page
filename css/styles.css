@@ -65,6 +65,10 @@ h3 {
     color: var(--color-headings);
 }
 
+footer h3 {
+    color: var(--color-text-light);
+}
+
 @media screen and (min-width: 768px) {
     h3 {
         font-size: 4rem;
@@ -80,6 +84,7 @@ p {
 
 footer p {
     font-size: 1.8rem;
+    color: var(--color-text-light);
 }
 
 @media screen and (min-width: 1440px) {
@@ -219,4 +224,20 @@ span {
 
 .align-center {
     align-items: center;
+}
+
+/* CONTAINER */
+.center {
+    margin: 0 auto;
+}
+
+/* ---------------------------- */
+/* ------HEADER---------- */
+/* ---------------------------- */
+.header {
+    padding: 4rem 0;
+}
+
+.logo {
+    height: 100%;
 }
