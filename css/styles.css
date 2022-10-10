@@ -27,6 +27,7 @@ html {
 body {
     font-family: "Red Hat Display", sans-serif;
     overflow-x: hidden;
+    color: var(--color-text-dark);
 }
 
 /* Headings */
@@ -101,6 +102,10 @@ footer p {
     text-align: center;
 }
 
+span {
+    font-size: 1.6rem;
+}
+
 /* -------------------------- */
 /* COMPONENTS */
 /* -------------------------- */
@@ -140,4 +145,31 @@ footer p {
 
 .btn--long {
     padding: 1.8rem 4.2rem;
+}
+
+/* NUMBERINGS */
+
+.line {
+    background-color: var(--color-text-dark);
+    height: 8.4rem;
+    left: 2.7rem;
+    position: relative;
+    width: 0.1rem;
+}
+
+.number {
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--color-text-dark);
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 5.6rem;
+    justify-content: center;
+    width: 5.6rem;
+}
+
+.number-line__container {
+    display: flex;
+    justify-content: center;
 }
