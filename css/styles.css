@@ -86,3 +86,58 @@ footer p {
         font-size: 1.8rem;
     }
 }
+
+/* TEXT */
+/* Text */
+.text-light-blue {
+    color: var(--color-light-blue);
+}
+
+.text-accent-light {
+    color: var(--color-accent-text);
+}
+
+.text--center {
+    text-align: center;
+}
+
+/* -------------------------- */
+/* COMPONENTS */
+/* -------------------------- */
+
+/* Buttons */
+.btn {
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+    padding: 1.8rem 2.8rem;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+    background-color: var(--color-primary-light);
+}
+
+.btn--accent {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.btn--accent:hover,
+.btn--accent:active {
+    background-color: var(--color-accent-light);
+}
+
+.btn--long {
+    padding: 1.8rem 4.2rem;
+}
