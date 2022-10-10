@@ -28,3 +28,61 @@ body {
     font-family: "Red Hat Display", sans-serif;
     overflow-x: hidden;
 }
+
+/* Headings */
+h1 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    color: var(--color-headings);
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+    }
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    color: var(--color-headings);
+}
+
+@media screen and (min-width: 768px) {
+    h3 {
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--color-text-dark);
+    line-height: 2.6rem;
+}
+
+footer p {
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 1440px) {
+    p {
+        font-size: 1.8rem;
+    }
+}
