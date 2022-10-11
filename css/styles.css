@@ -429,9 +429,11 @@ span {
 @media screen and (min-width: 1440px) {
     .image--gallery {
         grid-template-columns: repeat(4, 1fr);
-        padding: 0 20rem;
+        /* padding: 0 20rem; */
         gap: 3rem;
         margin-bottom: 8rem;
+        width: 1110px;
+        margin: 5rem auto;
     }
 }
 
@@ -536,6 +538,7 @@ span {
         position: absolute;
         top: -21rem;
         left: 50%;
+        transform: translateX(-50%);
         z-index: 1;
     }
 
