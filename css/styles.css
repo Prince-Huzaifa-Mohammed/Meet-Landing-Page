@@ -116,6 +116,10 @@ span {
     font-size: 1.6rem;
 }
 
+.bg-white {
+    background-color: var(--color-white);
+}
+
 /* -------------------------- */
 /* COMPONENTS */
 /* -------------------------- */
@@ -263,6 +267,25 @@ span {
     width: 100%;
 }
 
+.hero__heading span {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    color: var(--color-headings);
+    display: block;
+    /* text-align: center; */
+}
+
+.hero__buttons {
+    margin-top: 2rem;
+}
+
+.hero__text {
+    /* padding: 0 2rem; */
+    margin-bottom: 2rem;
+    width: 327px;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
     .image__container {
         width: 107%;
@@ -278,13 +301,20 @@ span {
         margin-bottom: 5rem;
     }
 
+    .hero__heading span {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+
     .hero__buttons {
         flex-direction: row;
         /* justify-content: center; */
     }
 
     .hero__text {
-        padding: 0 20rem;
+        /* padding: 0 20rem; */
+        width: 457px;
+        margin: 0 auto;
     }
 }
 
@@ -325,11 +355,13 @@ span {
     }
 
     .hero__heading {
-        padding: 4rem 5rem;
+        padding: 2rem 5rem;
+        margin-bottom: 0;
     }
 
     .hero__heading span {
         font-size: 6.4rem;
+        line-height: 6.4rem;
         color: var(--color-headings);
         display: block;
     }
@@ -337,6 +369,7 @@ span {
     .hero__text {
         /* margin-top: 2rem; */
         margin-bottom: 3rem;
+        width: 540px;
     }
 
     .hero__buttons {
@@ -351,20 +384,7 @@ span {
 
 .hero__heading {
     margin-top: 4rem;
-    margin-bottom: 2rem;
-}
-
-.hero__heading span {
-    font-size: 4rem;
-    line-height: 4.4rem;
-    color: var(--color-headings);
-    display: block;
-    /* text-align: center; */
-}
-
-.hero__text {
-    padding: 0 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 /* NUMBERING */
@@ -389,7 +409,7 @@ span {
 /* IMAGE GALLERY */
 .image--gallery {
     padding: 0 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
 }
 
 .gallery__image {
@@ -402,7 +422,7 @@ span {
         grid-template-columns: repeat(4, 1fr);
         padding: 0 5rem;
         gap: 1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -412,5 +432,122 @@ span {
         padding: 0 20rem;
         gap: 3rem;
         margin-bottom: 8rem;
+    }
+}
+
+/* Functionality */
+.functionality {
+    padding: 2.2rem;
+    margin-bottom: 15rem;
+}
+
+.functionality__subheading span {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    color: var(--color-headings);
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .functionality__text {
+        width: 573px;
+    }
+
+    .functionality__subheading span {
+        font-size: 4rem;
+        line-height: 4.4rem;
+        color: var(--color-headings);
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .functionality__text {
+        width: 540px;
+    }
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-image: linear-gradient(
+            rgba(77, 151, 169, 0.9),
+            rgba(77, 151, 169, 0.9)
+        ),
+        url(../imgs/mobile/image-footer.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 428px;
+}
+
+.footer__content {
+    width: 100%;
+}
+
+.footer__text {
+    width: 327px;
+}
+
+.footer__number {
+    position: absolute;
+    top: -16rem;
+    z-index: 1;
+}
+
+.footer__left span {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    color: var(--color-text-light);
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__left span {
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+
+    .footer__text {
+        width: 573px;
+    }
+
+    .footer__number {
+        /* position: absolute; */
+        top: -19rem;
+        /* z-index: 1; */
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        background-image: linear-gradient(
+                rgba(77, 151, 169, 0.9),
+                rgba(77, 151, 169, 0.9)
+            ),
+            url(../imgs/desktop/image-footer.jpg);
+        display: grid;
+        grid-template-columns: 350px 350px auto;
+        height: 308px;
+        gap: 6rem;
+        position: relative;
+    }
+
+    .footer__number {
+        position: absolute;
+        top: -21rem;
+        left: 50%;
+        z-index: 1;
+    }
+
+    .footer__left {
+        /* justify-self: start; */
+        text-align: left;
+        /* margin-left: 15rem; */
+    }
+
+    .footer__text {
+        width: 350px;
+        text-align: start;
+        padding: 0.8rem;
     }
 }
