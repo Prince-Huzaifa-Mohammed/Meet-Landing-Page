@@ -30,6 +30,11 @@ body {
     color: var(--color-text-dark);
 }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
 /* Headings */
 h1 {
     font-size: 4rem;
@@ -235,9 +240,146 @@ span {
 /* ------HEADER---------- */
 /* ---------------------------- */
 .header {
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 .logo {
     height: 100%;
+}
+
+/* ---------------------------- */
+/* ------HERO SECTION---------- */
+/* ---------------------------- */
+.header {
+    margin-bottom: 2rem;
+}
+
+.image__container {
+    width: 110%;
+    margin-left: -5%;
+}
+
+.center-image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .image__container {
+        width: 107%;
+        margin-left: -5%;
+    }
+
+    .center-image {
+        margin-left: 1.5%;
+        margin-bottom: 4rem;
+    }
+
+    .header {
+        margin-bottom: 5rem;
+    }
+
+    .hero__buttons {
+        flex-direction: row;
+        /* justify-content: center; */
+    }
+
+    .hero__text {
+        padding: 0 20rem;
+    }
+}
+
+.left-image {
+    display: none;
+}
+
+.right-image {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image__container {
+        display: none;
+    }
+
+    .left-image {
+        display: block;
+        justify-self: start;
+        margin-left: -3rem;
+    }
+
+    .right-image {
+        display: block;
+        justify-self: end;
+        align-self: end;
+        margin-right: -3rem;
+    }
+
+    .hero__content {
+        justify-self: center;
+        text-align: center;
+    }
+
+    .hero__heading {
+        padding: 4rem 5rem;
+    }
+
+    .hero__heading span {
+        font-size: 6.4rem;
+        color: var(--color-headings);
+        display: block;
+    }
+
+    .hero__text {
+        /* margin-top: 2rem; */
+        margin-bottom: 3rem;
+    }
+
+    .hero__buttons {
+        flex-direction: row;
+        /* justify-content: center; */
+    }
+
+    .header {
+        margin-bottom: 3rem;
+    }
+}
+
+.hero__heading {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.hero__heading span {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    color: var(--color-headings);
+    display: block;
+    /* text-align: center; */
+}
+
+.hero__text {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+/* NUMBERING */
+.number-line__container {
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .number-line__container {
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .number-line__container {
+        margin-top: 10rem;
+    }
 }
