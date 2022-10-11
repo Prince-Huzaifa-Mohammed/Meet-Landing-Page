@@ -272,6 +272,7 @@ span {
     line-height: 4.4rem;
     color: var(--color-headings);
     display: block;
+    /* margin-bottom: 2rem; */
     /* text-align: center; */
 }
 
@@ -283,7 +284,9 @@ span {
     /* padding: 0 2rem; */
     margin-bottom: 2rem;
     width: 327px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -314,7 +317,7 @@ span {
     .hero__text {
         /* padding: 0 20rem; */
         width: 457px;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 }
 
@@ -367,8 +370,8 @@ span {
     }
 
     .hero__text {
-        /* margin-top: 2rem; */
-        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
         width: 540px;
     }
 
