@@ -437,7 +437,7 @@ span {
         grid-template-columns: repeat(4, 1fr);
         /* padding: 0 20rem; */
         gap: 3rem;
-        margin-bottom: 8rem;
+        /* margin-bottom: 8rem; */
         max-width: 1110px;
         margin: 5rem auto;
     }
@@ -510,6 +510,14 @@ span {
 }
 
 @media screen and (min-width: 768px) {
+    .footer {
+        background-image: linear-gradient(
+                rgba(77, 151, 169, 0.9),
+                rgba(77, 151, 169, 0.9)
+            ),
+            url(../imgs/tablet/image-footer.jpg);
+    }
+
     .footer__left span {
         font-size: 4rem;
         line-height: 4.4rem;
