@@ -426,6 +426,9 @@ span {
         padding: 0 5rem;
         gap: 1rem;
         margin-bottom: 3rem;
+        max-width: 689px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -435,7 +438,7 @@ span {
         /* padding: 0 20rem; */
         gap: 3rem;
         margin-bottom: 8rem;
-        width: 1110px;
+        max-width: 1110px;
         margin: 5rem auto;
     }
 }
